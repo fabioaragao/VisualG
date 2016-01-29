@@ -1,0 +1,19 @@
+algoritmo "Mostra os impares do intervalo"
+// Função :
+// Autor : Fábio Aragão
+// Data : 29/01/2016
+// Seção de Declarações 
+var
+num1, num2, i : inteiro
+inicio
+escreva("Digite o primeiro numero: ")
+leia(num1)
+escreva("Digite o segundo numero: ")
+leia(num2)
+para i <- num1 ate num2 faca
+  se (i % 2) = 1 entao
+      escreval("Este numero do intervalo é impar: ",i)
+  fimse
+i <- i + 1
+fimpara
+fimalgoritmo
