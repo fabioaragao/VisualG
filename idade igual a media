@@ -1,0 +1,26 @@
+algoritmo "semnome"
+// Função :
+// Autor : Fábio Aragão
+// Data : 05/02/2016
+// Seção de Declarações 
+var
+vet : vetor [1..10] de inteiro
+soma, i, idadeigual : inteiro
+media : real
+inicio
+idadeigual <- 0
+para i <- 1 ate 10 faca
+  escreva("Digite a ",i,"a. idade: ")
+  leia(vet[i])
+  soma <- soma + vet[i]
+  media <- soma/10
+fimpara
+
+para i <- 1 ate 10 faca
+  se vet[i] = media entao
+    idadeigual <- idadeigual + 1
+  fimse
+fimpara
+escreval("================================================")
+escreva("Numero de pessoas com idade igual a média: ",idadeigual)
+fimalgoritmo
